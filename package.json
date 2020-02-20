@@ -36,6 +36,7 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "@types/jasmine": "^3.5.0"
+    "@types/jasmine": "^3.5.0",
+    "bootstrap": "^4.4.1"
   }
 }
