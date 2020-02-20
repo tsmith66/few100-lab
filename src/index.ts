@@ -41,7 +41,13 @@ function customTipUpdate() {
     tipButtons.forEach(btn => {
         btn.disabled = false;
     });
-    tipMultipler = '.' + customTip.value;
+
+    if (customTip.value.length === 1) {
+        tipMultipler = '.0' + customTip.value;
+    } else {
+        tipMultipler = '.' + customTip.value;
+    }
+
     tipAmountMessage = customTip.value + '%';
     updateTipInformation();
 }
